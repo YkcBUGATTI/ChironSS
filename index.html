@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHIRON SUPER SPORT — 布加迪 Chiron Super Sport</title>
+<meta name="description" content="布加迪 Chiron Super Sport:1,600 PS W16、440 km/h 极速、长尾空气动力学与 Grand Tourisme 奢华。从 300+ 破纪录到 Super Sport 之名,完整叙事。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CHIRON SUPER SPORT — 布加迪 Chiron Super Sport">
+<meta property="og:description" content="440 km/h · 1,600 PS · 无与伦比的 Grand Tourisme">
+<meta property="og:image" content="img/hero-poster.webp">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0b0d'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='%23f4f2ee' font-family='serif'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ 顶栏(首屏隐藏,滚动后出现) ============ -->
+<header class="nav is-hero" id="nav">
+  <div class="nav__inner">
+    <span class="nav__now mono" id="navNow">00 · 序</span>
+    <a class="nav__brand" href="#hero">
+      <svg viewBox="0 0 2468.89 566.93" width="86" height="20" fill="currentColor" aria-label="BUGATTI"><path d="M272.56 273.34c28.81-26.48 45.95-63.86 45.95-107.47 0-89.56-65.41-154.97-155.75-154.97H0v545.13h174.44c92.67 0 160.42-66.97 160.42-159.64 0-52.18-23.36-95.79-62.3-123.04ZM87.22 95.01h72.42c42.83 0 71.65 28.81 71.65 70.87s-28.81 70.87-71.65 70.87H87.22V95.01Zm84.1 376.91h-84.1V320.84h84.1c45.17 0 76.32 30.37 76.32 75.54s-31.15 75.54-76.32 75.54ZM648.69 406.51c0 44.39-31.93 76.32-76.32 76.32s-76.32-31.93-76.32-76.32V10.9h-87.22v389.38c0 96.56 68.53 166.65 163.54 166.65s163.54-70.09 163.54-166.65V10.9h-87.22v395.61ZM993.03 0c-95.01 0-163.54 70.09-163.54 166.65v233.62c0 96.56 68.53 166.65 163.54 166.65s163.54-70.09 163.54-166.65V241.41H993.03v84.11h76.32v80.99c0 44.39-31.93 76.32-76.32 76.32s-76.32-31.93-76.32-76.32V160.42c0-44.39 31.93-76.32 76.32-76.32s76.32 31.93 76.32 76.32v14.02h87.22v-7.79C1156.57 70.09 1088.04 0 993.03 0ZM1344.1 10.9l-125.38 545.12h86.44L1330.08 447h147.96l24.92 109.02h86.44L1464.03 10.9H1344.1Zm5.45 351.99 54.51-239.08 54.51 239.08h-109.02ZM1604.2 95.01h119.93l.78 461.02h85.66l.78-461.02h119.92V10.9H1604.2v84.11zM1976.59 95.01h119.93l.78 461.02h85.66l.78-461.02h119.92V10.9h-327.07v84.11zM2381.67 10.9h87.22v545.12h-87.22z"></path></svg>
+      <span class="nav__brand-sub">CHIRON SUPER SPORT</span>
+    </a>
+    <span class="nav__lang">
+      <a class="lang-btn mono" href="en.html">EN</a>
+      <button class="nav__menu-btn mono" id="menuBtn" aria-label="章节菜单" aria-expanded="false"><span class="nav__menu-icon"><i></i><i></i><i></i></span></button>
+    </span>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i id="navBar"></i></div>
+</header>
+
+<!-- 章节菜单浮层 -->
+<div class="menu-overlay" id="menuOverlay">
+  <nav class="menu-overlay__nav" aria-label="章节菜单">
+    <a href="#intro"><span class="idx">序</span>360° 环绕</a>
+    <a href="#aero"><span class="idx">01</span>被速度塑造</a>
+    <a href="#power"><span class="idx">02</span>力量与掌控</a>
+    <a href="#ss300"><span class="idx">03</span>Super Sport 300+</a>
+    <a href="#records"><span class="idx">04</span>速度纪录</a>
+    <a href="#bespoke"><span class="idx">05</span>Sur Mesure 定制</a>
+    <a href="#specs"><span class="idx">06</span>技术规格</a>
+  </nav>
+  <p class="menu-overlay__sub">BUGATTI — CHIRON SUPER SPORT · MOLSHEIM</p>
+</div>
+
+<!-- 滚动进度表盘 -->
+<div class="scroll-gauge" id="scrollGauge" aria-hidden="true">
+  <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle class="sg__bar" cx="22" cy="22" r="19"/></svg>
+  <span class="sg__num mono">00</span>
+</div>
+
+<main>
+
+<!-- ============ HERO(仅 svg,居中) ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <div class="hero__parallax">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/hero-main-poster.jpg">
+        <source src="video/hero-main.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__veil"></div>
+  </div>
+  <div class="hero__content">
+    <img class="hero__wordmark" src="img/wordmark.svg" alt="CHIRON SUPER SPORT" width="540" height="124">
+    <p class="hero__mini">THE ULTIMATE GRAND TOURISME · 440 KM/H</p>
+  </div>
+  <a class="hero__scroll" href="#intro" aria-label="向下滚动">SCROLL</a>
+</section>
+
+<!-- ============ 序 · 360° + 诞生 + 设计(无章节标题) ============ -->
+<section class="chapter chapter--dark" id="intro" style="padding-top:0;">
+  <div class="scrub">
+    <div class="scrub__track" data-dur="20">
+      <div class="scrub__sticky">
+        <video class="scrub__video" src="video/css-360.mp4" muted playsinline preload="none" poster="img/hero-poster.webp"></video>
+        <img class="scrub__poster" src="img/hero-poster.webp" alt="Chiron Super Sport 360°">
+        <div class="scrub__veil"></div>
+        <div class="scrub__ui">
+          <span class="scrub__label">360° · 滚动驱动</span>
+          <span class="scrub__prog mono">TIME <b>00:00</b></span>
+        </div>
+        <div class="scrub__texts">
+          <div class="scrub__text is-on">
+            <h3>为速度延展的长尾<br><em>THE LONGTAIL</em></h3>
+            <p>车尾延展 25 厘米,层流停留更久,尾部撕裂面积减少约 40%。</p>
+          </div>
+          <div class="scrub__text">
+            <h3>1,600 PS<br><em>W16 · 四涡轮</em></h3>
+            <p>8.0 升 W16 四涡轮增压,0–400 km/h 仅需 28.6 秒——如战斗机起飞般的纵向加速度。</p>
+          </div>
+          <div class="scrub__text">
+            <h3>奢华与速度的罕见融合<br><em>GRAND TOURISME</em></h3>
+            <p>地球上最快的量产车,也是最豪华的长途旅行者。</p>
+          </div>
+        </div>
+        <div class="scrub__meter" aria-hidden="true">
+          <span class="scrub__deg"><b>0</b>°</span>
+          <i></i>
+          <span>旋转角度</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 诞生:Super Sport 与普通版的关系与意义(无大标题) -->
+  <div class="wrap" style="padding-top:clamp(3.5rem,8vh,6rem);">
+    <div class="prose prose--center reveal">
+      <p class="lead">Chiron Super Sport,是布加迪性能光谱中「纵向」的一端——<br>与为弯道而生的 Pur Sport 互为两极。</p>
+      <p>它诞生于 Chiron 家族 500 台生产计划之中,却拥有完全独立的个性:</p>
+      <p>极速从普通版的 420 km/h 提升至 <b>440 km/h</b>,动力增加 100 PS,<br>车身延展 25 厘米——为直线与长途旅行而重塑。</p>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/hs-front2.webp" alt="Chiron Super Sport 动态行驶" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Chiron Family · 500 台计划</span>
+        <h3>Chiron 的极速特化</h3>
+        <p>Chiron(420 km/h)与 Chiron Super Sport(440 km/h)共享 W16 心脏与全时四驱,但 Super Sport 用更长的车尾、更强的动力与更低的阻力,回答了「极速与舒适能否共存」——Grand Tourisme 由此成立。</p>
+      </div>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/hs-side.webp" alt="Chiron Super Sport 侧面" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">01</span><span class="zh">延展的侧面轮廓——长尾让比例更显修长。</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/hs-top.webp" alt="Chiron Super Sport 俯视" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">02</span><span class="zh">俯视——中脊线贯穿,气流被精确引导。</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/interior.webp" alt="Chiron Super Sport 内饰" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">03</span><span class="zh">座舱——与极速同等的舒适与奢华。</span></figcaption>
+      </figure>
+    </div>
+
+
+    <!-- 设计内容 -->
+    <div class="prose prose--center reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <p class="lead">「form follows performance」——从车头分流器到尾部扩散器,每一厘米车身皮肤都为极速而设计。</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__media">
+        <img src="img/sketch-generations.webp" alt="Super Sport 四代演变手绘草图" loading="lazy">
+      </div>
+      <figcaption class="figure__cap">
+        <span class="no">序</span>
+        <span class="zh">Super Sport 的设计演变——Type 55 → EB 110 → Veyron → Chiron Super Sport(F. Da Long '21)。</span>
+      </figcaption>
+    </figure>
+
+    <div class="figrow figrow--3 reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/sketch-front.webp" alt="车头设计草图" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">A</span><span class="zh">车头设计草图(Frank Heyl)。</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/sketch-rear.webp" alt="车尾设计草图" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">B</span><span class="zh">车尾设计草图。</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/sketch-vs-pursport.webp" alt="与 Pur Sport 的气动对比草图" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">C</span><span class="zh">纵向 vs 横向——与 Pur Sport 的气动对比(J. Westermann '21)。</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 被速度塑造 · 空气动力学(遮盖画廊 A) ============ -->
+<div class="chapter-break" id="aero" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">01</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">01</span>
+    <div>
+      <h2>被速度塑造<span class="latin">Shaped by Speed</span></h2>
+      <p class="chapter-break__sub">「只有完美的进气气流,才能让有害湍流远离。」——Frank Heyl。滚动,让空气动力学的答案逐段展开。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="gallery">
+    <div class="gallery__texts">
+      <div class="g-text g-text--right">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 01</span>
+          <h3>阻力与下压力的完美平衡</h3>
+          <p>数月的风洞打磨,只为在极速下产生刚好足够的稳定下压力。</p>
+        </div>
+      </div>
+      <div class="g-text g-text--left">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 02</span>
+          <h3>功能与情感</h3>
+          <p>九孔侧出风口致敬 EB 110 Super Sport——380 km/h 下产生 20–30 公斤下压力,不增一丝阻力。</p>
+        </div>
+      </div>
+      <div class="g-text g-text--right">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 03</span>
+          <h3>气动平衡</h3>
+          <p>气帘引导气流紧贴车身,前散热器气流比 Chiron 高约 8%。</p>
+        </div>
+      </div>
+      <div class="g-text g-text--left">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 04</span>
+          <h3>层流长尾</h3>
+          <p>长尾让气流更长地贴附车身,尾部气流分离区(tear-off area)缩小 40%。</p>
+        </div>
+      </div>
+      <div class="g-text g-text--right">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 05</span>
+          <h3>上下叠置的四出排气</h3>
+          <p>排气移至两侧上下叠置,中央让给扩散器——总面积增加 32%。钛合金 3D 打印的双层饰框薄至 0.4 毫米。</p>
+        </div>
+      </div>
+      <div class="g-text g-text--left">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 06</span>
+          <h3>风洞里的答案</h3>
+          <p>Top Speed 模式下尾翼几乎完全收起,层流贯穿整车。风阻系数 0.35,升力中性。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery__media">
+      <div class="g-sticky">
+        <span class="g-count mono"><b>01</b> / 06</span>
+        <div class="g-image">
+          <img src="img/windtunnel-front.webp" alt="风洞中的 Chiron Super Sport">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/off-02-detail-vents.webp" alt="前翼子板九孔出风口">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/windtunnel-side-tipped.webp" alt="风洞中的侧面气流">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/hs-rear2.webp" alt="长尾与贯穿式尾灯">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/exhaust.webp" alt="上下叠置的四出排气">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/windtunnel-rear.webp" alt="风洞中的车尾">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
+    <div class="quote reveal">
+      <blockquote>在 400 km/h 以上,它只产生刚好足够的、保持稳定的下压力。</blockquote>
+      <figcaption><b>Frank Heyl</b> — 布加迪设计副总监</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 力量与掌控 · 工程(遮盖画廊 B + 测功机) ============ -->
+<div class="chapter-break chapter-break--dark" id="power" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">02</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">02</span>
+    <div>
+      <h2>力量与掌控<span class="latin">Power &amp; Control</span></h2>
+      <p class="chapter-break__sub">从 1,600 PS 的 W16,到 440 km/h 下的每一条轮胎——工程,让力量变得可控。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark">
+      <!-- W16 发动机视频:性能之巅 -->
+  <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
+    <div class="chapter-video reveal">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/w16-01.jpg" data-autoview>
+        <source src="video/w16-engine.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">W16 · THE PINNACLE OF POWER</span>
+        <h3>W16:性能之巅</h3>
+        <p>8.0 升、16 缸、四涡轮,3,500 多个零件全部手工装配。2001 年首次点火即输出 1,000+1 PS;此后二十年不断进化:Veyron 1,000 PS、Super Sport 1,200 PS、Chiron 1,500 PS,直至 Super Sport 的 1,600 PS。45° 不对称点火间隔,赋予它独一无二的声浪。</p>
+      </div>
+    </div>
+  </div>
+<div class="wrap" style="padding-top:clamp(2rem,5vh,3.5rem);">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/w16-09.jpg" alt="W16 发动机整机" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The Heart · W16</span>
+        <h3>1,600 PS 的心脏</h3>
+        <p>8.0 升、16 缸、四涡轮——体积不比一台 V12 更大,重量仅约 400 公斤,3,500 多个零件全部由手工装配。从 Veyron 的 1,000 PS 到 Super Sport 的 1,600 PS,这台发动机定义了布加迪的极速时代。</p>
+      </div>
+    </div>
+
+    <div class="dcards dcards--edge reveal">
+      <div class="dcard">
+        <img src="img/w16-02.jpg" alt="八根连杆整齐排列" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 01</span>
+          <h3>八根连杆</h3>
+          <p>16 个气缸的每一次爆发,都由<b>八根连杆</b>精确承接。</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/w16-06.jpg" alt="一体式曲轴" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 02</span>
+          <h3>一体式曲轴</h3>
+          <p>16 缸的往复汇聚于一根曲轴——<b>平衡与强度</b>,缺一不可。</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/w16-07.jpg" alt="碳纤维进气歧管" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 03</span>
+          <h3>碳纤维进气歧管</h3>
+          <p>双进气口碳纤维歧管,把空气送进<b>全部 16 个气缸</b>。</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/w16-01.jpg" alt="W 形缸体铸件" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 04</span>
+          <h3>W 形缸体</h3>
+          <p>两个 8 缸单元呈 W 形排列——<b>紧凑</b>,是工程的奇迹。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 测功机视频 -->
+  <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
+    <div class="chapter-video reveal">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/w16-dyno-poster.jpg" data-autoview>
+        <source src="video/w16-dyno.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">DYNAMOMETER · 单滚筒测功机</span>
+        <h3>1,618 PS:推至极限的验证</h3>
+        <p>420 km/h 时,轮胎每秒旋转超过 50 圈,胎面承受约 4,000 g 的力。这台可模拟 480 km/h 的测功机,只有 Chiron Super Sport 能推到极限。</p>
+      </div>
+    </div>
+
+    <div class="gauges">
+      <figure class="gauge reveal" data-gauge="1618" data-max="2000" data-decimals="0" data-unit="PS">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">PS</span></figcaption>
+        </div>
+        <p class="gauge__label">测功机实测功率<small>单滚筒 · 轮上输出</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="50" data-max="60" data-decimals="0" data-unit="转/秒">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">转/秒</span></figcaption>
+        </div>
+        <p class="gauge__label">420 km/h 轮胎转速<small>每秒超过 50 圈</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="4000" data-max="5000" data-decimals="0" data-unit="g">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">g</span></figcaption>
+        </div>
+        <p class="gauge__label">胎面承受加速度<small>约 4,000 倍重力</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="480" data-max="500" data-decimals="0" data-unit="km/h">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">km/h</span></figcaption>
+        </div>
+        <p class="gauge__label">测功机模拟极限<small>每辊制动 1,200 kW</small></p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 Super Sport 300+ ============ -->
+<div class="chapter-break" id="ss300" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">03</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">03</span>
+    <div>
+      <h2>Super Sport 300+<span class="latin">The Special Edition</span></h2>
+      <p class="chapter-break__sub">以破纪录之车为蓝本的特别版——墨黑碳纤维、两条橙色条纹,限量 30 台。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/ss300-last-delivery.webp" alt="Chiron Super Sport 300+ 于日落赛道" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Special Edition · 献给纪录的礼物</span>
+        <h3>30 台,墨黑碳纤维与 Jet Orange</h3>
+        <p>2019 年 9 月,布加迪于 Molsheim 110 周年庆典发布 Super Sport 300+ 特别版。外露墨黑可见碳纤维,两条 Jet Orange 条纹从前贯穿至后;1,600 PS 输出比 Chiron 多 100 PS,配备全新热管理系统。</p>
+      </div>
+    </div>
+
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b><em>30</em> 台</b><span>特别版限量</span></div>
+      <div class="bigstats__item"><b><em>1,600</em> PS</b><span>8.0T W16</span></div>
+      <div class="bigstats__item"><b><em>3.5</em> M€</b><span>净价</span></div>
+      <div class="bigstats__item"><b><em>2021</em></b><span>开始交付</span></div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/ss300-24.jpg" alt="马蹄形格栅与 EB 徽标" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Detail · 01</span>
+        <h3>马蹄形格栅与 EB 徽标</h3>
+        <p>蜂窝网格与<b>可见碳纤维</b>之间,EB 徽标居中——身份,从第一眼开始。</p>
+      </div>
+    </div>
+
+    <div class="media-row media-row--flip reveal" style="margin-top:clamp(1.5rem,4vh,2.6rem);">
+      <div class="media-row__media">
+        <img src="img/ss300-26.jpg" alt="宽体后翼子板" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Detail · 02</span>
+        <h3>宽体后翼子板</h3>
+        <p>碳纤维曲面覆盖 355 mm 后轮——<b>长尾之下</b>,下压力仍在延续。</p>
+      </div>
+    </div>
+
+    <!-- 细节特写:图文卡(divo 风格) -->
+    <div class="dcards dcards--edge reveal">
+      <div class="dcard">
+        <img src="img/ss300-29.jpg" alt="碳纤维机盖通风孔" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 03</span>
+          <h3>碳纤维机盖通风孔</h3>
+          <p>编织纹理上的圆形通风阵列,<b>为 W16 的呼吸而雕琢</b>。</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/ss300-28.jpg" alt="竖直双出排气管" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 04</span>
+          <h3>竖直双出排气管</h3>
+          <p>碳纤维包围中的四管尾喉,<b>钛合金与热浪</b>——1,600 PS 的出口。</p>
+        </div>
+      </div>
+
+      <div class="dcard">
+        <img src="img/ss300-32.jpg" alt="驾驶者座舱" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 05</span>
+          <h3>驾驶者座舱</h3>
+          <p>EB 徽标方向盘、换挡拨片与 ENGINE/LC 按钮,<b>一切为驾驶而生</b>。</p>
+        </div>
+      </div>
+
+      <div class="dcard">
+        <img src="img/ss300-40.jpg" alt="前轮与碳陶刹车" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 06</span>
+          <h3>前轮与碳陶刹车</h3>
+          <p>Michelin Pilot Sport Cup 2 与<b>碳陶瓷制动盘</b>,在 440 km/h 面前毫不妥协。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 04 速度纪录 ============ -->
+<div class="chapter-break chapter-break--dark" id="records" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">04</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">04</span>
+    <div>
+      <h2>速度纪录<span class="latin">The Records</span></h2>
+      <p class="chapter-break__sub">2019 年 8 月 2 日,布加迪成为首家突破 300 mph 大关的制造商。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark">
+  <div class="wrap">
+    <div class="record reveal">
+      <div class="record__hero">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/record-ehra-01.jpg" data-autoview>
+          <source src="video/record-300-hero.mp4" type="video/mp4">
+        </video>
+        <div class="record__hero__veil"></div>
+        <div class="record__hero__inner">
+          <span class="kicker">02.08.2019 · EHRA-LESSIEN · 德国</span>
+          <h3>304.773 MPH — 490.484 KM/H</h3>
+          <p>一台接近量产的 Chiron 原型车,成为史上第一款突破 300 mph 的量产车型。世界纪录。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>「我们成为首家突破 300 mph 大关的制造商——这让我们、整个团队和我自己,无比自豪。」</blockquote>
+      <figcaption><b>Stephan Winkelmann</b> — 布加迪总裁</figcaption>
+    </div>
+
+    <!-- 图文结合:纪录驾驶 -->
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/ss300-17.jpg" alt="纪录之车在极速直道上" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The Run · 纪录驾驶</span>
+        <h3>从 300 km/h 起步,每次递增 50</h3>
+        <p>Andy Wallace 以 50 km/h 的步进从 300 km/h 逐级攀升,确认升力与下压力平衡后才挑战极速。一圈暖胎后,他从北弯以 200 km/h 出弯,在 8.8 公里的直道上全油门约 70 秒,再以 2 公里距离刹车减速通过南弯——一秒覆盖 136 米。</p>
+      </div>
+    </div>
+
+    <!-- 图文结合:为什么是 Ehra-Lessien -->
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/ss300-21.jpg" alt="纪录之车与笔直的测试道" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The Track · 为什么是 Ehra-Lessien</span>
+        <h3>低海拔的挑战,最高的安全标准</h3>
+        <p>Ehra-Lessien 海拔仅 50 米,空气密度更大——400 km/h 以上,车辆如同撞向一堵墙,海拔差异最多可造成 25 km/h 的速度差。但这里是世界上唯一达到布加迪安全标准的高速测试场:21 公里三车道直道两侧布满护栏,南北两端常驻救援,测试前路面经特殊清洁垫清除碎石。</p>
+      </div>
+    </div>
+
+    <div class="dcards reveal">
+      <div class="dcard">
+        <img src="img/ss300-33.jpg" alt="驾驶者" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">The Day · 01</span>
+          <h3>驾驶者:Andy Wallace</h3>
+          <p>Andy Wallace 戴好头盔——<b>勒芒冠军</b>。1998 年,他曾在同一条直道上驾驶 McLaren F1 创下 391 km/h 纪录;今天,他将开启 490 km/h 的一圈。</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/ss300-38.jpg" alt="数据调校" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">The Day · 02</span>
+          <h3>数据调校</h3>
+          <p>工程师在引擎舱旁<b>逐条核对遥测</b>,每一次速度递增都先经过确认。</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/ss300-36.jpg" alt="幕后团队" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">The Day · 03</span>
+          <h3>幕后团队</h3>
+          <p>散热风扇与备用轮胎就位——<b>每一圈</b>,都凝聚着整支队伍。</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/ss300-42.jpg" alt="世界纪录" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">The Day · 04</span>
+          <h3>世界纪录</h3>
+          <p>密封 GPS 记录全程,由 <b>SGS-TÜV Saar</b> 认证——<b>304.773 mph</b> 就此写入历史。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hcards reveal">
+      <article class="hcard">
+        <span class="hcard__year">Team · 01</span>
+        <h3>Dallara 与 Michelin</h3>
+        <p class="hcard__num">PARTNERS</p>
+        <p>意大利赛车专家 Dallara 与轮胎伙伴 Michelin 深度参与——没有他们,纪录不可能达成。</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">Team · 02</span>
+        <h3>5,300 G 的轮胎</h3>
+        <p class="hcard__num">4,100 RPM</p>
+        <p>强化带束层的 Michelin 高速胎,每分钟旋转 4,100 次,在美国台架测试至 511 km/h,逐条 X 光检查。</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">Team · 03</span>
+        <h3>六点安全带与安全舱</h3>
+        <p class="hcard__num">SAFETY CELL</p>
+        <p>由 Stefan Ellrott 领导的跨学科团队,为纪录车加装六点安全带与额外安全舱。</p>
+      </article>
+    </div>
+
+    <div class="record reveal">
+      <div class="record__hero">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/record-300-poster.jpg" data-autoview>
+          <source src="video/record-300-clip-3.mp4" type="video/mp4">
+        </video>
+        <div class="record__hero__veil"></div>
+        <div class="record__hero__inner">
+          <span class="kicker">THE LEGACY · 传承</span>
+          <blockquote>「布加迪率先越过 300 mph 大关——它的名字将载入史册,并将永远如此。」</blockquote>
+          <figcaption><b>Stephan Winkelmann</b> — 布加迪总裁</figcaption>
+        </div>
+      </div>
+    </div>
+
+    <div class="rec-line reveal">
+      <div class="rec-line__item">
+        <span class="rec-line__year">1903</span>
+        <div class="rec-line__name">De Dietrich Type 5<small>Ettore 亲自设计</small></div>
+        <span class="rec-line__val"><em>100</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">1924</span>
+        <div class="rec-line__name">Type 35<small>史上最成功的赛车</small></div>
+        <span class="rec-line__val"><em>2,000</em> 场胜利</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">1992</span>
+        <div class="rec-line__name">EB 110 Super Sport<small>碳纤维车身 · 四涡轮 V12</small></div>
+        <span class="rec-line__val"><em>351</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2005</span>
+        <div class="rec-line__name">Veyron 16.4<small>首个突破 400 km/h 的量产车</small></div>
+        <span class="rec-line__val"><em>407</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2010</span>
+        <div class="rec-line__name">Veyron 16.4 Super Sport<small>Raphanel · Ehra-Lessien</small></div>
+        <span class="rec-line__val"><em>431.072</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2013</span>
+        <div class="rec-line__name">Grand Sport Vitesse<small>敞篷车纪录 · Anthony Liu</small></div>
+        <span class="rec-line__val"><em>408.84</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2019</span>
+        <div class="rec-line__name">Chiron Super Sport 300+<small>Wallace · 首个 300 mph 突破者</small></div>
+        <span class="rec-line__val"><em>490.484</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2024</span>
+        <div class="rec-line__name">W16 Mistral World Record Car<small>敞篷车新纪录 · Papenburg</small></div>
+        <span class="rec-line__val"><em>453.91</em> km/h</span>
+      </div>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__media">
+        <img src="img/speedline-record-cars.jpg" alt="现代纪录车谱系" loading="lazy">
+      </div>
+      <figcaption class="figure__cap">
+        <span class="no">04</span>
+        <span class="zh">现代纪录车谱系——从 Veyron 到 W16 Mistral。</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 05 Sur Mesure · 定制 ============ -->
+<div class="chapter-break" id="bespoke" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">05</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">05</span>
+    <div>
+      <h2>Sur Mesure · 定制<span class="latin">Bespoke</span></h2>
+      <p class="chapter-break__sub">「所见即所得。如果它看起来像手绘草图,那它就必须是手绘草图。」——每一台 Chiron Super Sport 都可以独一无二。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <!-- Golden Era 视频:手工奢华之巅 -->
+    <div class="chapter-video reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/goldenera-1.webp" data-autoview>
+        <source src="video/goldenera-watersteps.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">GOLDEN ERA · THE PINNACLE OF HAND-CRAFTED LUXURY</span>
+        <h3>Golden Era:手工奢华之巅</h3>
+        <p>两名艺术家、45 幅手绘草图、全新开发的「Doré」金渐变——历时两年,在 Nocturne 黑的车身上,布加迪的百年编年史被一笔一笔绘出。</p>
+      </div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/goldenera-1.webp" alt="Chiron Super Sport Golden Era" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Sur Mesure · Golden Era</span>
+        <h3>手绘的布加迪编年史</h3>
+        <p>45 幅手工绘制的草图:驾驶员侧 19 幅(1987 至今),乘客侧 26 幅(1909–1956);全新开发的「Doré」金渐变铺陈于 Nocturne 黑车身,历时两年完成。</p>
+      </div>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/goldenera-2.webp" alt="Golden Era 侧面手绘" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">01</span><span class="zh">侧面——现代史 19 幅草图。</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/goldenera-3.webp" alt="Golden Era 侧面轮廓" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">02</span><span class="zh">'Doré' 金渐变 Nocturne 黑。</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/goldenera-4.webp" alt="艺术家在车身上作画" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">03</span><span class="zh">铅笔素描般的笔触,直接绘于车身。</span></figcaption>
+      </figure>
+    </div>
+
+
+    <!-- 特别版:Type 50S Hommage -->
+    <div class="media-row media-row--flip reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <div class="media-row__media">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/t50s-hommage-b.webp" data-autoview>
+          <source src="video/type50s-hommage.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Sur Mesure · Type 50S Hommage</span>
+        <h3>50177:黑色传奇</h3>
+        <p>致敬 1931 年勒芒传奇底盘 50177:墨黑光泽车身、两侧手绘白色「5」、「Le Mans 1931」字样与发动机舱的 Perlée 旋纹——连尾翼内侧,都藏着当年 Circuit de la Sarthe 的完整赛道图。</p>
+      </div>
+    </div>
+
+    <!-- 特别版:Type 55「55 1 of 1」 -->
+    <div class="media-row reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <div class="media-row__media">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/t55-1of1-b.webp" data-autoview>
+          <source src="video/type55-1of1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Sur Mesure · Type 55「55 1 of 1」</span>
+        <h3>黄黑双色的致敬</h3>
+        <p>Jean Bugatti 首创的双色涂装,以黑黄再现:黑色中脊线贯穿车头,「55」渐变图案从翼子板淡出,尾翼下方以花体字写下「55 1 of 1」——Jean 的签名,留在门槛与铭牌上。</p>
+      </div>
+    </div>
+
+    <!-- L'Ultime:定制章收尾 -->
+    <div class="chapter-video reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/era-lultime-poster.jpg" data-autoview>
+        <source src="video/era-lultime.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">L'ULTIME · 2024</span>
+        <h3>Chiron 时代的终章</h3>
+        <p>第 500 台,也是最后一台 Chiron。French Racing Blue 渐变 Atlantic Blue 的车身上,手写着 Chiron 时代每一站的坐标与纪录。</p>
+      </div>
+    </div>
+
+    <div class="figrow figrow--2 reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/lultime.webp" alt="L'Ultime 山海之间" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">06</span><span class="zh">L'Ultime——蓝色渐变的终章。</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/goldenera-6.webp" alt="尾翼上的 500 字样" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">07</span><span class="zh">「500」镌刻于尾翼。</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 技术规格 ============ -->
+<div class="chapter-break chapter-break--dark" id="specs" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">06</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">06</span>
+    <div>
+      <h2>技术规格<span class="latin">Specifications</span></h2>
+      <p class="chapter-break__sub">W16 · 8.0 升 · 四涡轮 · 全时四驱。数据来自布加迪官方技术规格文件。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark">
+  <div class="wrap">
+    <div class="gauges">
+      <figure class="gauge reveal" data-gauge="440" data-max="500" data-decimals="0" data-unit="km/h">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">km/h</span></figcaption>
+        </div>
+        <p class="gauge__label">极速<small>Top Speed 模式</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="1600" data-max="2000" data-decimals="0" data-unit="PS">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">PS</span></figcaption>
+        </div>
+        <p class="gauge__label">最大功率<small>@ 7,050–7,100 rpm</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="1600" data-max="2000" data-decimals="0" data-unit="Nm">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">Nm</span></figcaption>
+        </div>
+        <p class="gauge__label">最大扭矩<small>2,250–7,000 rpm</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="28.6" data-max="40" data-decimals="1" data-unit="s">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">s</span></figcaption>
+        </div>
+        <p class="gauge__label">0–400 km/h<small>比 Chiron 快 4 秒</small></p>
+      </figure>
+    </div>
+
+    <div class="specs-tabs reveal" id="specsTabs">
+      <div class="specs-tabs__nav" role="tablist">
+        <button class="specs-tabs__btn is-on" data-tab="general" role="tab">车体 · General</button>
+        <button class="specs-tabs__btn" data-tab="powertrain" role="tab">动力 · Powertrain</button>
+        <button class="specs-tabs__btn" data-tab="chassis" role="tab">底盘 · Chassis</button>
+        <button class="specs-tabs__btn" data-tab="performance" role="tab">性能 · Performance</button>
+      </div>
+      <div class="specs-tabs__panel is-on" data-panel="general">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">全长 Length</span><span class="v">4,733<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">车宽 Width(含后视镜)</span><span class="v">2,183<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">车高 Height(标准设定)</span><span class="v">1,212<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">轴距 Wheelbase</span><span class="v">2,711<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">轮距 Track F / R</span><span class="v">1,749 / 1,662<span class="unit">mm</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">整备质量 Kerb weight(DIN)</span><span class="v">1,995<span class="unit">kg</span></span></div>
+          <div class="specs__row"><span class="k">轻量化措施</span><span class="v">−23<span class="unit">kg</span></span></div>
+          <div class="specs__row"><span class="k">油箱 Fuel tank</span><span class="v">100<span class="unit">L</span></span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="powertrain">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">发动机 Engine</span><span class="v">W16 · 中置</span></div>
+          <div class="specs__row"><span class="k">排量 Displacement</span><span class="v">7,993<span class="unit">cm³</span></span></div>
+          <div class="specs__row"><span class="k">每缸气门</span><span class="v">4</span></div>
+          <div class="specs__row"><span class="k">增压 Turbocharging</span><span class="v">四涡轮 · 二级增压 · 水/空中冷</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">最大功率 Power</span><span class="v">1,600<span class="unit">PS @ 7,050–7,100 rpm</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">最大扭矩 Torque</span><span class="v">1,600<span class="unit">Nm @ 2,250–7,000 rpm</span></span></div>
+          <div class="specs__row"><span class="k">变速箱 Transmission</span><span class="v">7 速 DSG 双离合</span></div>
+          <div class="specs__row"><span class="k">驱动 Drive</span><span class="v">全时四驱 · BorgWarner 前轴差速</span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="chassis">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">悬挂 Suspension</span><span class="v">双叉臂 · 前 / 后</span></div>
+          <div class="specs__row"><span class="k">前轮 Front wheels</span><span class="v">10J × 20 ET55 · 285/30 R20</span></div>
+          <div class="specs__row"><span class="k">后轮 Rear wheels</span><span class="v">13.5J × 21 ET71.5 · 355/25 R21</span></div>
+          <div class="specs__row"><span class="k">前刹 Front brakes</span><span class="v">Ø 420<span class="unit">mm</span> · 8 活塞</span></div>
+          <div class="specs__row"><span class="k">后刹 Rear brakes</span><span class="v">Ø 400<span class="unit">mm</span> · 6 活塞</span></div>
+          <div class="specs__row"><span class="k">驾驶模式 Drive modes</span><span class="v">Lift · EB · Autobahn · Handling · Top Speed</span></div>
+          <div class="specs__row"><span class="k">离地间隙(Top Speed)</span><span class="v">80 / 89<span class="unit">mm 前/后</span></span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="performance">
+        <div class="specs__group">
+          <div class="specs__row specs__row--hl"><span class="k">极速 Top speed</span><span class="v">440<span class="unit">km/h(Top Speed 模式)</span></span></div>
+          <div class="specs__row"><span class="k">极速(其他模式)</span><span class="v">380<span class="unit">km/h</span></span></div>
+          <div class="specs__row"><span class="k">0–100 km/h</span><span class="v">2.4<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">0–200 km/h</span><span class="v">5.8<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">0–300 km/h</span><span class="v">12.1<span class="unit">s</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">0–400 km/h</span><span class="v">28.6<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">0–400–0 km/h</span><span class="v">39.2<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">制动 400→0 km/h</span><span class="v">520<span class="unit">m</span></span></div>
+          <div class="specs__row"><span class="k">各档极速(1→7 档)</span><span class="v">100 / 160 / 210 / 280 / 340 / 415 / 440 km/h</span></div>
+          <div class="specs__row"><span class="k">横向加速度(Handling)</span><span class="v">1.5<span class="unit">g</span></span></div>
+          <div class="specs__row"><span class="k">风阻系数 Cd(Top Speed)</span><span class="v">0.35</span></div>
+          <div class="specs__row"><span class="k">升力系数 Cl(Handling)</span><span class="v">−0.06 / −0.20<span class="unit">前/后</span></span></div>
+          <div class="specs__row"><span class="k">尾翼角度(Top Speed / Air brake)</span><span class="v">1° / 39°</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="fine reveal">
+      技术数据来自布加迪官方《Chiron Super Sport 技术规格》(2021)。WLTP 综合油耗 21.47 L/100 km,CO₂ 综合排放 486.72 g/km,能效等级 G。
+      <a href="spec/spec-chiron-super-sport.pdf" download>下载官方技术规格 PDF →</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 页脚(divo 同款) ============ -->
+<footer class="footer">
+  <div class="footer__portal">
+    <div class="footer__portal-inner">
+      <p class="footer__portal-kicker mono">MORE LEGENDS · 更多传奇</p>
+      <p class="footer__portal-title">HYPERCAR<span class="footer__portal-dot">.</span>SITE</p>
+      <p class="footer__portal-sub">超跑传奇集合介绍页</p>
+      <a class="footer__portal-btn mono" href="https://www.hypercar.site" target="_blank" rel="noopener">前往 Hypercar →</a>
+    </div>
+  </div>
+  <div class="footer__contact">
+    <span class="footer__contact-label mono">CONTACT · 联系</span>
+    <div class="footer__contact-btns">
+      <a class="sbtn sbtn--bili" href="https://space.bilibili.com/675250962" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M7.1 2.6 8.9.8l2.1 2.1L13.1.8l1.8 1.8-1.7 1.7h2.5c1.9 0 3.4 1.5 3.4 3.4v8.6c0 1.9-1.5 3.4-3.4 3.4H6.3c-1.9 0-3.4-1.5-3.4-3.4V7.7c0-1.9 1.5-3.4 3.4-3.4h2.5L7.1 2.6zM7.6 4.3H6.3c-1.3 0-2.4 1.1-2.4 2.4v8.6c0 1.3 1.1 2.4 2.4 2.4h11.4c1.3 0 2.4-1.1 2.4-2.4V6.7c0-1.3-1.1-2.4-2.4-2.4h-1.3l1.2-1.2-.9-.9-2.2 2.2-2.2-2.2-.9.9 1.2 1.2H7.6z"/><circle cx="9.4" cy="12.6" r="1.5"/><circle cx="14.6" cy="12.6" r="1.5"/></svg>
+        <span class="sbtn__txt"><b>BILIBILI</b><small>@HybridV16 · 哔哩哔哩空间</small></span>
+        <i class="sbtn__arrow">→</i>
+      </a>
+      <a class="sbtn sbtn--yt" href="https://www.youtube.com/@HybridV16" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.4-1C16.9 3.5 12 3.5 12 3.5s-4.9 0-8.2.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.4-.9 2.4S.3 9.2.3 11.2v1.6c0 2 .2 4 .2 4s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 7.9.3 7.9.3s4.9 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.4.9-2.4s.2-2 .2-4v-1.6c0-2-.2-4-.2-4zM9.7 15.4V8.2l6.4 3.6-6.4 3.6z"/></svg>
+        <span class="sbtn__txt"><b>YOUTUBE</b><small>@HybridV16 · YouTube 频道</small></span>
+        <i class="sbtn__arrow">→</i>
+      </a>
+    </div>
+  </div>
+  <div class="footer__top">
+    <p class="footer__brand mono">BUGATTI · CHIRON SUPER SPORT</p>
+    <p class="footer__links mono">
+      <a href="index.html">中文</a><a href="en.html">English</a>
+    </p>
+  </div>
+  <div class="footer__disclaimer">
+    <p>本站为爱好者制作的介绍站点,内容、图片与视频均来自布加迪官方新闻稿与官方网站,供学习与展示之用。Bugatti、Chiron Super Sport 及相关商标、图片版权归 Bugatti Automobiles S.A.S. 所有。性能数据以官方发布为准。</p>
+    <p class="mono">图片来源:<a href="https://newsroom.bugatti.com" target="_blank" rel="noopener">BUGATTI NEWSROOM</a> · <a href="https://www.bugatti.com/en/models/chiron-super-sport" target="_blank" rel="noopener">BUGATTI.COM</a> — MOLSHEIM · 1903 → 2024</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHIRON SUPER SPORT — Bugatti Chiron Super Sport</title>
+<meta name="description" content="The Bugatti Chiron Super Sport: a 1,600 PS W16, 440 km/h top speed, longtail aerodynamics and Grand Tourisme luxury. From the 300+ record to the Super Sport legacy.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CHIRON SUPER SPORT — Bugatti Chiron Super Sport">
+<meta property="og:description" content="440 km/h · 1,600 PS · The Ultimate Grand Tourisme">
+<meta property="og:image" content="img/hero-poster.webp">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0b0d'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='%23f4f2ee' font-family='serif'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ 顶栏(首屏隐藏,滚动后出现) ============ -->
+<header class="nav is-hero" id="nav">
+  <div class="nav__inner">
+    <span class="nav__now mono" id="navNow">00 · Intro</span>
+    <a class="nav__brand" href="#hero">
+      <svg viewBox="0 0 2468.89 566.93" width="86" height="20" fill="currentColor" aria-label="BUGATTI"><path d="M272.56 273.34c28.81-26.48 45.95-63.86 45.95-107.47 0-89.56-65.41-154.97-155.75-154.97H0v545.13h174.44c92.67 0 160.42-66.97 160.42-159.64 0-52.18-23.36-95.79-62.3-123.04ZM87.22 95.01h72.42c42.83 0 71.65 28.81 71.65 70.87s-28.81 70.87-71.65 70.87H87.22V95.01Zm84.1 376.91h-84.1V320.84h84.1c45.17 0 76.32 30.37 76.32 75.54s-31.15 75.54-76.32 75.54ZM648.69 406.51c0 44.39-31.93 76.32-76.32 76.32s-76.32-31.93-76.32-76.32V10.9h-87.22v389.38c0 96.56 68.53 166.65 163.54 166.65s163.54-70.09 163.54-166.65V10.9h-87.22v395.61ZM993.03 0c-95.01 0-163.54 70.09-163.54 166.65v233.62c0 96.56 68.53 166.65 163.54 166.65s163.54-70.09 163.54-166.65V241.41H993.03v84.11h76.32v80.99c0 44.39-31.93 76.32-76.32 76.32s-76.32-31.93-76.32-76.32V160.42c0-44.39 31.93-76.32 76.32-76.32s76.32 31.93 76.32 76.32v14.02h87.22v-7.79C1156.57 70.09 1088.04 0 993.03 0ZM1344.1 10.9l-125.38 545.12h86.44L1330.08 447h147.96l24.92 109.02h86.44L1464.03 10.9H1344.1Zm5.45 351.99 54.51-239.08 54.51 239.08h-109.02ZM1604.2 95.01h119.93l.78 461.02h85.66l.78-461.02h119.92V10.9H1604.2v84.11zM1976.59 95.01h119.93l.78 461.02h85.66l.78-461.02h119.92V10.9h-327.07v84.11zM2381.67 10.9h87.22v545.12h-87.22z"></path></svg>
+      <span class="nav__brand-sub">CHIRON SUPER SPORT</span>
+    </a>
+    <span class="nav__lang">
+      <a class="lang-btn mono" href="index.html">中文</a>
+      <button class="nav__menu-btn mono" id="menuBtn" aria-label="Chapter menu" aria-expanded="false"><span class="nav__menu-icon"><i></i><i></i><i></i></span></button>
+    </span>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i id="navBar"></i></div>
+</header>
+
+<!-- 章节菜单浮层 -->
+<div class="menu-overlay" id="menuOverlay">
+  <nav class="menu-overlay__nav" aria-label="Chapter menu">
+    <a href="#intro"><span class="idx">I</span>360° Orbit</a>
+    <a href="#aero"><span class="idx">01</span>Shaped by Speed</a>
+    <a href="#power"><span class="idx">02</span>Power &amp; Control</a>
+    <a href="#ss300"><span class="idx">03</span>Super Sport 300+</a>
+    <a href="#records"><span class="idx">04</span>The Records</a>
+    <a href="#bespoke"><span class="idx">05</span>Sur Mesure</a>
+    <a href="#specs"><span class="idx">06</span>Specifications</a>
+  </nav>
+  <p class="menu-overlay__sub">BUGATTI — CHIRON SUPER SPORT · MOLSHEIM</p>
+</div>
+
+<!-- 滚动进度表盘 -->
+<div class="scroll-gauge" id="scrollGauge" aria-hidden="true">
+  <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle class="sg__bar" cx="22" cy="22" r="19"/></svg>
+  <span class="sg__num mono">00</span>
+</div>
+
+<main>
+
+<!-- ============ HERO(仅 svg,居中) ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <div class="hero__parallax">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/hero-main-poster.jpg">
+        <source src="video/hero-main.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__veil"></div>
+  </div>
+  <div class="hero__content">
+    <img class="hero__wordmark" src="img/wordmark.svg" alt="CHIRON SUPER SPORT" width="540" height="124">
+    <p class="hero__mini">THE ULTIMATE GRAND TOURISME · 440 KM/H</p>
+  </div>
+  <a class="hero__scroll" href="#intro" aria-label="Scroll down">SCROLL</a>
+</section>
+
+<!-- ============ 序 · 360° + 诞生 + 设计(无章节标题) ============ -->
+<section class="chapter chapter--dark" id="intro" style="padding-top:0;">
+  <div class="scrub">
+    <div class="scrub__track" data-dur="20">
+      <div class="scrub__sticky">
+        <video class="scrub__video" src="video/css-360.mp4" muted playsinline preload="none" poster="img/hero-poster.webp"></video>
+        <img class="scrub__poster" src="img/hero-poster.webp" alt="Chiron Super Sport 360°">
+        <div class="scrub__veil"></div>
+        <div class="scrub__ui">
+          <span class="scrub__label">360° · Scroll-driven</span>
+          <span class="scrub__prog mono">TIME <b>00:00</b></span>
+        </div>
+        <div class="scrub__texts">
+          <div class="scrub__text is-on">
+            <h3>The Longtail,<br><em>EXTENDED FOR SPEED</em></h3>
+            <p>Extended by 25 cm — the tear-off area cut by around 40%.</p>
+          </div>
+          <div class="scrub__text">
+            <h3>1,600 PS<br><em>W16 · QUAD-TURBO</em></h3>
+            <p>An 8.0-litre W16 with four turbochargers. 0–400 km/h in 28.6 seconds — the speed at which planes fly.</p>
+          </div>
+          <div class="scrub__text">
+            <h3>Luxury and Speed,<br><em>IN RARE HARMONY</em></h3>
+            <p>The world's fastest production car — and its most luxurious traveller.</p>
+          </div>
+        </div>
+        <div class="scrub__meter" aria-hidden="true">
+          <span class="scrub__deg"><b>0</b>°</span>
+          <i></i>
+          <span>Rotation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 诞生:Super Sport 与普通版的关系与意义(无大标题) -->
+  <div class="wrap" style="padding-top:clamp(3.5rem,8vh,6rem);">
+    <div class="prose prose--center reveal">
+      <p class="lead">The Chiron Super Sport is the "longitudinal" end of Bugatti's spectrum of performance —<br>the counterpart to the corner-hungry Pur Sport.</p>
+      <p>Born within the Chiron family's 500-unit programme, it has a personality of its own:</p>
+      <p>top speed raised from the standard Chiron's 420 km/h to <b>440 km/h</b>, 100 PS more power,<br>the body extended by 25 cm — rebuilt for straights and long journeys.</p>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/hs-front2.webp" alt="Chiron Super Sport on the move" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Chiron Family · 500 Units</span>
+        <h3>Chiron, Specialised for Top Speed</h3>
+        <p>The Chiron (420 km/h) and the Chiron Super Sport (440 km/h) share the W16 heart and all-wheel drive — but the Super Sport answers "can extreme speed and comfort coexist" with a longer tail, more power and lower drag. Grand Tourisme, established.</p>
+      </div>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/hs-side.webp" alt="Chiron Super Sport side profile" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">01</span><span class="zh">The extended silhouette — the longtail makes the proportions sleeker.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/hs-top.webp" alt="Chiron Super Sport top view" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">02</span><span class="zh">From above — the central spine guides the airflow.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/interior.webp" alt="Chiron Super Sport interior" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">03</span><span class="zh">The cabin — comfort equal to the speed.</span></figcaption>
+      </figure>
+    </div>
+
+
+    <!-- 设计内容 -->
+    <div class="prose prose--center reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <p class="lead">"Form follows performance" — from the front splitter to the rear diffuser, every centimetre of the skin is designed for top speed.</p>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__media">
+        <img src="img/sketch-generations.webp" alt="Four generations of Super Sport sketches" loading="lazy">
+      </div>
+      <figcaption class="figure__cap">
+        <span class="no">序</span>
+        <span class="zh">The evolution of Super Sport — Type 55 → EB 110 → Veyron → Chiron Super Sport (F. Da Long '21).</span>
+      </figcaption>
+    </figure>
+
+    <div class="figrow figrow--3 reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/sketch-front.webp" alt="Front design sketch" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">A</span><span class="zh">Front design sketch (Frank Heyl).</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/sketch-rear.webp" alt="Rear design sketch" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">B</span><span class="zh">Rear design sketch.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/sketch-vs-pursport.webp" alt="Aero comparison with the Pur Sport" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">C</span><span class="zh">Longitudinal vs lateral — aero comparison with the Pur Sport (J. Westermann '21).</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 被速度塑造 · 空气动力学(遮盖画廊 A) ============ -->
+<div class="chapter-break" id="aero" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">01</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">01</span>
+    <div>
+      <h2>Shaped by Speed<span class="latin">Aerodynamics</span></h2>
+      <p class="chapter-break__sub">"Only perfect incoming airflow will keep harmful turbulence at bay." — Frank Heyl. Scroll — each answer unfolds.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="gallery">
+    <div class="gallery__texts">
+      <div class="g-text g-text--right">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 01</span>
+          <h3>Drag and Downforce in Perfect Harmony</h3>
+          <p>Months in the wind tunnel — just enough downforce to stay stable at extreme speed.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--left">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 02</span>
+          <h3>Function and Emotion</h3>
+          <p>Nine cylindrical outlets pay homage to the EB 110 Super Sport — 20 to 30 kg of downforce at 380 km/h, without adding resistance.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--right">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 03</span>
+          <h3>Aero-Balance</h3>
+          <p>Air curtains keep the flow tight to the body; radiator airflow is about 8% higher than the Chiron's.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--left">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 04</span>
+          <h3>Blowing in the Wind</h3>
+          <p>The longtail cuts the tear-off area by 40% — and the proportions are wider, lower-slung.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--right">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 05</span>
+          <h3>Stacked Quad Exhaust</h3>
+          <p>Exhausts moved to the sides, freeing the center for the diffuser — total size up 32%. Titanium 3D-printed bezels as thin as 0.4 mm.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--left">
+        <div class="g-text__card">
+          <span class="g-text__no">Aero · 06</span>
+          <h3>The Wind Tunnel Finale</h3>
+          <p>In top-speed mode the wing retracts almost completely. Drag coefficient 0.35, neutral lift.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery__media">
+      <div class="g-sticky">
+        <span class="g-count mono"><b>01</b> / 06</span>
+        <div class="g-image">
+          <img src="img/windtunnel-front.webp" alt="Chiron Super Sport in the wind tunnel">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/off-02-detail-vents.webp" alt="Nine cylindrical fender outlets">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/windtunnel-side-tipped.webp" alt="Air curtains in the wind tunnel">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/hs-rear2.webp" alt="Longtail and light bar">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/exhaust.webp" alt="Stacked quad exhaust">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/windtunnel-rear.webp" alt="Rear in the wind tunnel">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
+    <div class="quote reveal">
+      <blockquote>Above 400 km/h, it generates just enough downforce to stay stable.</blockquote>
+      <figcaption><b>Frank Heyl</b> — Deputy Design Director, Bugatti</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 力量与掌控 · 工程(遮盖画廊 B + 测功机) ============ -->
+<div class="chapter-break chapter-break--dark" id="power" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">02</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">02</span>
+    <div>
+      <h2>Power &amp; Control<span class="latin">Engineering</span></h2>
+      <p class="chapter-break__sub">From a W16 strengthened to 1,600 PS, to every tyre at 440 km/h — engineering makes power controllable.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark">
+      <!-- W16 engine video: The Pinnacle of Power -->
+  <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
+    <div class="chapter-video reveal">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/w16-01.jpg" data-autoview>
+        <source src="video/w16-engine.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">W16 · THE PINNACLE OF POWER</span>
+        <h3>W16: The Pinnacle of Power</h3>
+        <p>8.0 litres, 16 cylinders, four turbochargers — more than 3,500 parts assembled entirely by hand. First fired in 2001 at 1,000+1 PS, it evolved over two decades: 1,000 PS in the Veyron, 1,200 PS in the Super Sport, 1,500 PS in the Chiron and 1,600 PS in the Super Sport. An asymmetric 45-degree firing order gives it a voice like no other.</p>
+      </div>
+    </div>
+  </div>
+<div class="wrap" style="padding-top:clamp(2rem,5vh,3.5rem);">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/w16-09.jpg" alt="The W16 engine in full" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The Heart · W16</span>
+        <h3>The 1,600 PS Heart</h3>
+        <p>8.0 litres, 16 cylinders, four turbochargers — no larger than a V12, weighing about 400 kg, with more than 3,500 parts assembled entirely by hand. From the Veyron's 1,000 PS to the Super Sport's 1,600 PS, this engine defined Bugatti's era of extreme speed.</p>
+      </div>
+    </div>
+
+    <div class="dcards dcards--edge reveal">
+      <div class="dcard">
+        <img src="img/w16-02.jpg" alt="Eight connecting rods in line" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 01</span>
+          <h3>Eight Conrods</h3>
+          <p>Every burst from the 16 cylinders is carried by <b>eight connecting rods</b>.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/w16-06.jpg" alt="The one-piece crankshaft" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 02</span>
+          <h3>One Crankshaft</h3>
+          <p>The reciprocation of 16 cylinders converges on a single crankshaft — <b>balance and strength</b> in one.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/w16-07.jpg" alt="Carbon intake plenum" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 03</span>
+          <h3>Carbon Intake Plenum</h3>
+          <p>A twin-inlet carbon manifold feeding <b>all 16 cylinders</b>.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/w16-01.jpg" alt="The W-shaped block casting" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Craft · 04</span>
+          <h3>The W-Shaped Block</h3>
+          <p>Two eight-cylinder banks arranged in a W — <b>compactness</b> as an engineering miracle.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 测功机视频 -->
+  <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
+    <div class="chapter-video reveal">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/w16-dyno-poster.jpg" data-autoview>
+        <source src="video/w16-dyno.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">DYNAMOMETER · Single-Roller Rig</span>
+        <h3>1,618 PS: Verification at the Limit</h3>
+        <p>At 420 km/h, a tyre revolves more than 50 times a second, with forces on the tread around 4,000 g. Only the Chiron Super Sport can push this dyno — capable of 480 km/h — to its limits.</p>
+      </div>
+    </div>
+
+    <div class="gauges">
+      <figure class="gauge reveal" data-gauge="1618" data-max="2000" data-decimals="0" data-unit="PS">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">PS</span></figcaption>
+        </div>
+        <p class="gauge__label">Dyno-verified output<small>Single roller · wheel output</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="50" data-max="60" data-decimals="0" data-unit="转/秒">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">转/秒</span></figcaption>
+        </div>
+        <p class="gauge__label">Tyre rotation at 420 km/h<small>Over 50 revolutions per second</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="4000" data-max="5000" data-decimals="0" data-unit="g">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">g</span></figcaption>
+        </div>
+        <p class="gauge__label">Force on the tread<small>Approx. 4,000 g</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="480" data-max="500" data-decimals="0" data-unit="km/h">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">km/h</span></figcaption>
+        </div>
+        <p class="gauge__label">Dyno simulation limit<small>1,200 kW per roller</small></p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 Super Sport 300+ ============ -->
+<div class="chapter-break" id="ss300" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">03</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">03</span>
+    <div>
+      <h2>Super Sport 300+<span class="latin">The Special Edition</span></h2>
+      <p class="chapter-break__sub">Based on the record-breaking car — jet-black carbon, two orange stripes, limited to 30 units.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/ss300-last-delivery.webp" alt="Chiron Super Sport 300+ at sunset" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Special Edition · A Gift for the Record</span>
+        <h3>30 Units, Jet Black Carbon &amp; Jet Orange</h3>
+        <p>Unveiled in September 2019 at Bugatti's 110th anniversary in Molsheim. Exposed jet-black carbon fibre, two Jet Orange racing stripes running the full length; 1,600 PS — 100 more than the Chiron — with a new thermal management system.</p>
+      </div>
+    </div>
+
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b><em>30</em> 台</b><span>Edition limit</span></div>
+      <div class="bigstats__item"><b><em>1,600</em> PS</b><span>8.0T W16</span></div>
+      <div class="bigstats__item"><b><em>3.5</em> M€</b><span>Net price</span></div>
+      <div class="bigstats__item"><b><em>2021</em></b><span>Deliveries begin</span></div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/ss300-24.jpg" alt="Horseshoe grille and EB badge" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Detail · 01</span>
+        <h3>Horseshoe Grille &amp; EB Badge</h3>
+        <p>Honeycomb mesh and <b>visible carbon fibre</b>, the EB badge centred — identity, from the first glance.</p>
+      </div>
+    </div>
+
+    <div class="media-row media-row--flip reveal" style="margin-top:clamp(1.5rem,4vh,2.6rem);">
+      <div class="media-row__media">
+        <img src="img/ss300-26.jpg" alt="The rear haunch" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Detail · 02</span>
+        <h3>The Rear Haunch</h3>
+        <p>Carbon curves over 355 mm rear tyres — <b>beyond the longtail</b>, downforce continues.</p>
+      </div>
+    </div>
+
+    <!-- Detail close-ups: image-text cards (Divo style) -->
+    <div class="dcards dcards--edge reveal">
+      <div class="dcard">
+        <img src="img/ss300-29.jpg" alt="Carbon engine-cover vents" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 03</span>
+          <h3>Carbon Engine-Cover Vents</h3>
+          <p>A circular vent array in woven carbon — <b>sculpted for the W16's breath</b>.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/ss300-28.jpg" alt="Twin vertical exhausts" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 04</span>
+          <h3>Twin Vertical Exhausts</h3>
+          <p>Four tailpipes framed in carbon — <b>titanium and heat</b>, the exit of 1,600 PS.</p>
+        </div>
+      </div>
+
+      <div class="dcard">
+        <img src="img/ss300-32.jpg" alt="The driver's cockpit" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 05</span>
+          <h3>The Driver's Cockpit</h3>
+          <p>EB-badged wheel, paddles and ENGINE/LC buttons — <b>everything for the drive</b>.</p>
+        </div>
+      </div>
+
+      <div class="dcard">
+        <img src="img/ss300-40.jpg" alt="Front wheel and carbon-ceramic brakes" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Detail · 06</span>
+          <h3>Front Wheel &amp; Carbon-Ceramic Brakes</h3>
+          <p>Michelin Pilot Sport Cup 2 and <b>carbon-ceramic discs</b>, uncompromising at 440 km/h.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 04 速度纪录 ============ -->
+<div class="chapter-break chapter-break--dark" id="records" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">04</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">04</span>
+    <div>
+      <h2>The Records<span class="latin">The Records</span></h2>
+      <p class="chapter-break__sub">On 2 August 2019, Bugatti became the first manufacturer to break the 300 mph barrier.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark">
+  <div class="wrap">
+    <div class="record reveal">
+      <div class="record__hero">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/record-ehra-01.jpg" data-autoview>
+          <source src="video/record-300-hero.mp4" type="video/mp4">
+        </video>
+        <div class="record__hero__veil"></div>
+        <div class="record__hero__inner">
+          <span class="kicker">02.08.2019 · EHRA-LESSIEN · GERMANY</span>
+          <h3>304.773 MPH — 490.484 KM/H</h3>
+          <p>A near-production Chiron prototype became the first production-based car past 300 mph. A world record.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>"We have become the first manufacturer to reach the magic 300-mile-per-hour mark — making ourselves, the entire team and myself, incredibly proud."</blockquote>
+      <figcaption><b>Stephan Winkelmann</b> — President, Bugatti</figcaption>
+    </div>
+
+    <!-- 图文结合:纪录驾驶 -->
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/ss300-17.jpg" alt="The record car on the top-speed straight" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The Run · Record Drive</span>
+        <h3>From 300 km/h, in Steps of 50</h3>
+        <p>Andy Wallace worked his way up from 300 km/h in 50 km/h increments to confirm the aero balance. After one warm-up lap, he exited the north curve at 200 km/h, held full throttle for about 70 seconds on the 8.8-kilometre straight, then braked over two kilometres through the south bend — covering 136 metres every second.</p>
+      </div>
+    </div>
+
+    <!-- The Track: why Ehra-Lessien -->
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/ss300-21.jpg" alt="The record car on the straight test road" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The Track · Why Ehra-Lessien</span>
+        <h3>Low Altitude, the Highest Safety Standard</h3>
+        <p>At just 50 metres above sea level, Ehra-Lessien's denser air is a handicap — above 400 km/h the car runs as if against a wall, and altitude can make up to 25 km/h of difference. Yet it is the only place in the world meeting Bugatti's safety standards: a 21-kilometre three-lane straight lined with crash barriers, rescue services at both ends, and the road cleaned with special mats before the run.</p>
+      </div>
+    </div>
+
+    <div class="dcards reveal">
+      <div class="dcard">
+        <img src="img/ss300-33.jpg" alt="The driver — Andy Wallace" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">The Day · 01</span>
+          <h3>The Driver</h3>
+          <p>Andy Wallace straps on his helmet — <b>Le Mans winner</b>. In 1998 he set a 391 km/h record in a McLaren F1 on this same straight; today he is about to open a lap at 490 km/h.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/ss300-38.jpg" alt="Engineers checking telemetry" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">The Day · 02</span>
+          <h3>Data Calibration</h3>
+          <p>Engineers <b>check telemetry line by line</b> beside the engine bay — every increment confirmed before the run.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/ss300-36.jpg" alt="The crew at the track" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">The Day · 03</span>
+          <h3>The Crew</h3>
+          <p>Cooling fans and spare tyres in place — <b>every lap</b> carries the whole team.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/ss300-42.jpg" alt="SGS-TÜV certified world record" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">The Day · 04</span>
+          <h3>A World Record</h3>
+          <p>A sealed GPS box recorded the run, certified by <b>SGS-TÜV Saar</b> — <b>304.773 mph</b> enters history.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hcards reveal">
+      <article class="hcard">
+        <span class="hcard__year">Team · 01</span>
+        <h3>Dallara &amp; Michelin</h3>
+        <p class="hcard__num">PARTNERS</p>
+        <p>Italian race specialist Dallara and tyre partner Michelin were deeply involved — the record would not have been possible without them.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">Team · 02</span>
+        <h3>Tyres for 5,300 G</h3>
+        <p class="hcard__num">4,100 RPM</p>
+        <p>Reinforced Michelin high-speed tyres, revolving 4,100 times a minute, tested on the bench at up to 511 km/h in the USA, each one X-rayed.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">Team · 03</span>
+        <h3>Six-Point Belts &amp; Safety Cell</h3>
+        <p class="hcard__num">SAFETY CELL</p>
+        <p>A cross-disciplinary team under Stefan Ellrott prepared the record car with six-point belts and an additional safety cell.</p>
+      </article>
+    </div>
+
+    <div class="record reveal">
+      <div class="record__hero">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/record-300-poster.jpg" data-autoview>
+          <source src="video/record-300-clip-3.mp4" type="video/mp4">
+        </video>
+        <div class="record__hero__veil"></div>
+        <div class="record__hero__inner">
+          <span class="kicker">THE LEGACY · HERITAGE</span>
+          <blockquote>"Bugatti was the first to exceed the 300 mph mark — its name will go down in the history books and it will stay that way forever."</blockquote>
+          <figcaption><b>Stephan Winkelmann</b> — President, Bugatti</figcaption>
+        </div>
+      </div>
+    </div>
+
+    <div class="rec-line reveal">
+      <div class="rec-line__item">
+        <span class="rec-line__year">1903</span>
+        <div class="rec-line__name">De Dietrich Type 5<small>Designed by Ettore himself</small></div>
+        <span class="rec-line__val"><em>100</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">1924</span>
+        <div class="rec-line__name">Type 35<small>The most successful racer ever</small></div>
+        <span class="rec-line__val"><em>2,000</em> wins</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">1992</span>
+        <div class="rec-line__name">EB 110 Super Sport<small>Carbon body · Quad-turbo V12</small></div>
+        <span class="rec-line__val"><em>351</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2005</span>
+        <div class="rec-line__name">Veyron 16.4<small>First production car beyond 400 km/h</small></div>
+        <span class="rec-line__val"><em>407</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2010</span>
+        <div class="rec-line__name">Veyron 16.4 Super Sport<small>Raphanel · Ehra-Lessien</small></div>
+        <span class="rec-line__val"><em>431.072</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2013</span>
+        <div class="rec-line__name">Grand Sport Vitesse<small>Open-top record · Anthony Liu</small></div>
+        <span class="rec-line__val"><em>408.84</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2019</span>
+        <div class="rec-line__name">Chiron Super Sport 300+<small>Wallace · First past 300 mph</small></div>
+        <span class="rec-line__val"><em>490.484</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2024</span>
+        <div class="rec-line__name">W16 Mistral World Record Car<small>New open-top record · Papenburg</small></div>
+        <span class="rec-line__val"><em>453.91</em> km/h</span>
+      </div>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__media">
+        <img src="img/speedline-record-cars.jpg" alt="Record cars of the modern era" loading="lazy">
+      </div>
+      <figcaption class="figure__cap">
+        <span class="no">04</span>
+        <span class="zh">The modern record-car lineage — from the Veyron to the W16 Mistral.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 05 Sur Mesure · 定制 ============ -->
+<div class="chapter-break" id="bespoke" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">05</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">05</span>
+    <div>
+      <h2>Sur Mesure<span class="latin">Bespoke</span></h2>
+      <p class="chapter-break__sub">"What you see is what you get. If it looks like hand-drawn sketches, then it must be exactly that." — Every Chiron Super Sport can be unique.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <!-- Golden Era video: The Pinnacle of Hand-Crafted Luxury -->
+    <div class="chapter-video reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/goldenera-1.webp" data-autoview>
+        <source src="video/goldenera-watersteps.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">GOLDEN ERA · THE PINNACLE OF HAND-CRAFTED LUXURY</span>
+        <h3>Golden Era: The Pinnacle of Hand-Crafted Luxury</h3>
+        <p>Two artists, 45 hand-drawn sketches and a newly developed 'Doré' gold gradient — over two years, Bugatti's century of history was drawn, line by line, onto a Nocturne-black body.</p>
+      </div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/goldenera-1.webp" alt="Chiron Super Sport Golden Era" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Sur Mesure · Golden Era</span>
+        <h3>A Hand-Drawn Chronicle of Bugatti</h3>
+        <p>45 hand-drawn sketches: 19 on the driver's side (1987 to today), 26 on the passenger side (1909–1956) — a newly developed 'Doré' gold gradient flowing over Nocturne black, two years in the making.</p>
+      </div>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/goldenera-2.webp" alt="Golden Era side sketches" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">01</span><span class="zh">Side — 19 sketches of the modern era.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/goldenera-3.webp" alt="Golden Era side profile" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">02</span><span class="zh">"Doré" gold fading into "Nocturne" black.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/goldenera-4.webp" alt="Artist painting the bodywork" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">03</span><span class="zh">Pencil-sketch strokes, drawn directly on the bodywork.</span></figcaption>
+      </figure>
+    </div>
+
+
+    <!-- Special edition: Type 50S Hommage -->
+    <div class="media-row media-row--flip reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <div class="media-row__media">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/t50s-hommage-b.webp" data-autoview>
+          <source src="video/type50s-hommage.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Sur Mesure · Type 50S Hommage</span>
+        <h3>50177: A Black Legend</h3>
+        <p>A tribute to chassis 50177, the 1931 Le Mans legend: lustrous black, a hand-painted '5' on both flanks, 'Le Mans 1931' script and the engine-turned 'Perlée' finish — even the underside of the rear wing carries a complete map of the 1931 Circuit de la Sarthe.</p>
+      </div>
+    </div>
+
+    <!-- Special edition: Type 55 '55 1 of 1' -->
+    <div class="media-row reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <div class="media-row__media">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/t55-1of1-b.webp" data-autoview>
+          <source src="video/type55-1of1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Sur Mesure · Type 55 '55 1 of 1'</span>
+        <h3>A Two-Tone Tribute</h3>
+        <p>Jean Bugatti's groundbreaking duotone scheme, recreated in black and yellow: a black centreline over the nose, a fading '55' pattern across the fenders, and '55 1 of 1' in cursive under the wing — with Jean's signature on the sill and dedication plate.</p>
+      </div>
+    </div>
+
+    <!-- L'Ultime:定制章收尾 -->
+    <div class="chapter-video reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/era-lultime-poster.jpg" data-autoview>
+        <source src="video/era-lultime.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">L'ULTIME · 2024</span>
+        <h3>The End of the Chiron Era</h3>
+        <p>The 500th and last Chiron. On its French Racing Blue fading to Atlantic Blue, the coordinates of every chapter of the Chiron era are written by hand.</p>
+      </div>
+    </div>
+
+    <div class="figrow figrow--2 reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/lultime.webp" alt="L'Ultime between sea and hills" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">06</span><span class="zh">L'Ultime — the final chapter in fading blue.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/goldenera-6.webp" alt="The 500 mark on the wing" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">07</span><span class="zh">"500" engraved on the wing.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 技术规格 ============ -->
+<div class="chapter-break chapter-break--dark" id="specs" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">06</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">06</span>
+    <div>
+      <h2>Specifications<span class="latin">Specifications</span></h2>
+      <p class="chapter-break__sub">W16 · 8.0 L · Quad-turbo · All-wheel drive. Data from the official Bugatti technical specification.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark">
+  <div class="wrap">
+    <div class="gauges">
+      <figure class="gauge reveal" data-gauge="440" data-max="500" data-decimals="0" data-unit="km/h">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">km/h</span></figcaption>
+        </div>
+        <p class="gauge__label">Top Speed<small>Top Speed mode</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="1600" data-max="2000" data-decimals="0" data-unit="PS">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">PS</span></figcaption>
+        </div>
+        <p class="gauge__label">Power Output<small>@ 7,050–7,100 rpm</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="1600" data-max="2000" data-decimals="0" data-unit="Nm">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">Nm</span></figcaption>
+        </div>
+        <p class="gauge__label">Max. Torque<small>2,250–7,000 rpm</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="28.6" data-max="40" data-decimals="1" data-unit="s">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">s</span></figcaption>
+        </div>
+        <p class="gauge__label">0–400 km/h<small>4 seconds quicker than Chiron</small></p>
+      </figure>
+    </div>
+
+    <div class="specs-tabs reveal" id="specsTabs">
+      <div class="specs-tabs__nav" role="tablist">
+        <button class="specs-tabs__btn is-on" data-tab="general" role="tab">General</button>
+        <button class="specs-tabs__btn" data-tab="powertrain" role="tab">Powertrain</button>
+        <button class="specs-tabs__btn" data-tab="chassis" role="tab">Chassis</button>
+        <button class="specs-tabs__btn" data-tab="performance" role="tab">Performance</button>
+      </div>
+      <div class="specs-tabs__panel is-on" data-panel="general">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">Length</span><span class="v">4,733<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">Width (incl. mirrors)</span><span class="v">2,183<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">Height (normal setting)</span><span class="v">1,212<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">Wheelbase</span><span class="v">2,711<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">Track F / R</span><span class="v">1,749 / 1,662<span class="unit">mm</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Kerb weight (DIN)</span><span class="v">1,995<span class="unit">kg</span></span></div>
+          <div class="specs__row"><span class="k">Weight reduction</span><span class="v">−23<span class="unit">kg</span></span></div>
+          <div class="specs__row"><span class="k">Fuel capacity</span><span class="v">100<span class="unit">L</span></span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="powertrain">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">Engine</span><span class="v">W16 · 中置</span></div>
+          <div class="specs__row"><span class="k">Displacement</span><span class="v">7,993<span class="unit">cm³</span></span></div>
+          <div class="specs__row"><span class="k">Valves per cylinder</span><span class="v">4</span></div>
+          <div class="specs__row"><span class="k">Turbocharging</span><span class="v">四涡轮 · 二级增压 · 水/空中冷</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Power output</span><span class="v">1,600<span class="unit">PS @ 7,050–7,100 rpm</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Max. torque</span><span class="v">1,600<span class="unit">Nm @ 2,250–7,000 rpm</span></span></div>
+          <div class="specs__row"><span class="k">Transmission</span><span class="v">7 速 DSG 双离合</span></div>
+          <div class="specs__row"><span class="k">Drive system</span><span class="v">全时四驱 · BorgWarner 前轴差速</span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="chassis">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">Suspension</span><span class="v">双叉臂 · 前 / 后</span></div>
+          <div class="specs__row"><span class="k">Front wheels</span><span class="v">10J × 20 ET55 · 285/30 R20</span></div>
+          <div class="specs__row"><span class="k">Rear wheels</span><span class="v">13.5J × 21 ET71.5 · 355/25 R21</span></div>
+          <div class="specs__row"><span class="k">Front brakes</span><span class="v">Ø 420<span class="unit">mm</span> · 8 活塞</span></div>
+          <div class="specs__row"><span class="k">Rear brakes</span><span class="v">Ø 400<span class="unit">mm</span> · 6 活塞</span></div>
+          <div class="specs__row"><span class="k">Drive modes</span><span class="v">Lift · EB · Autobahn · Handling · Top Speed</span></div>
+          <div class="specs__row"><span class="k">Ground clearance (Top Speed)</span><span class="v">80 / 89<span class="unit">mm F/R</span></span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="performance">
+        <div class="specs__group">
+          <div class="specs__row specs__row--hl"><span class="k">Top speed</span><span class="v">440<span class="unit">km/h (Top Speed mode)</span></span></div>
+          <div class="specs__row"><span class="k">Top speed (other modes)</span><span class="v">380<span class="unit">km/h</span></span></div>
+          <div class="specs__row"><span class="k">0–100 km/h</span><span class="v">2.4<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">0–200 km/h</span><span class="v">5.8<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">0–300 km/h</span><span class="v">12.1<span class="unit">s</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">0–400 km/h</span><span class="v">28.6<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">0–400–0 km/h</span><span class="v">39.2<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">制动 400→0 km/h</span><span class="v">520<span class="unit">m</span></span></div>
+          <div class="specs__row"><span class="k">Top speed per gear (1→7)</span><span class="v">100 / 160 / 210 / 280 / 340 / 415 / 440 km/h</span></div>
+          <div class="specs__row"><span class="k">Lateral acceleration (Handling)</span><span class="v">1.5<span class="unit">g</span></span></div>
+          <div class="specs__row"><span class="k">Drag coefficient Cd (Top Speed)</span><span class="v">0.35</span></div>
+          <div class="specs__row"><span class="k">Lift coefficient Cl (Handling)</span><span class="v">−0.06 / −0.20<span class="unit">F/R</span></span></div>
+          <div class="specs__row"><span class="k">Wing angle (Top Speed / Air brake)</span><span class="v">1° / 39°</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="fine reveal">
+      Technical data from the official Bugatti "Chiron Super Sport" specification (2021). WLTP combined fuel consumption 21.47 L/100 km; combined CO₂ emissions 486.72 g/km; efficiency class G.
+      <a href="spec/spec-chiron-super-sport.pdf" download>Download official spec sheet (PDF) →</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 页脚(divo 同款) ============ -->
+<footer class="footer">
+  <div class="footer__portal">
+    <div class="footer__portal-inner">
+      <p class="footer__portal-kicker mono">MORE LEGENDS · 更多传奇</p>
+      <p class="footer__portal-title">HYPERCAR<span class="footer__portal-dot">.</span>SITE</p>
+      <p class="footer__portal-sub">超跑传奇集合介绍页</p>
+      <a class="footer__portal-btn mono" href="https://www.hypercar.site" target="_blank" rel="noopener">前往 Hypercar →</a>
+    </div>
+  </div>
+  <div class="footer__contact">
+    <span class="footer__contact-label mono">CONTACT · 联系</span>
+    <div class="footer__contact-btns">
+      <a class="sbtn sbtn--bili" href="https://space.bilibili.com/675250962" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M7.1 2.6 8.9.8l2.1 2.1L13.1.8l1.8 1.8-1.7 1.7h2.5c1.9 0 3.4 1.5 3.4 3.4v8.6c0 1.9-1.5 3.4-3.4 3.4H6.3c-1.9 0-3.4-1.5-3.4-3.4V7.7c0-1.9 1.5-3.4 3.4-3.4h2.5L7.1 2.6zM7.6 4.3H6.3c-1.3 0-2.4 1.1-2.4 2.4v8.6c0 1.3 1.1 2.4 2.4 2.4h11.4c1.3 0 2.4-1.1 2.4-2.4V6.7c0-1.3-1.1-2.4-2.4-2.4h-1.3l1.2-1.2-.9-.9-2.2 2.2-2.2-2.2-.9.9 1.2 1.2H7.6z"/><circle cx="9.4" cy="12.6" r="1.5"/><circle cx="14.6" cy="12.6" r="1.5"/></svg>
+        <span class="sbtn__txt"><b>BILIBILI</b><small>@HybridV16 · 哔哩哔哩空间</small></span>
+        <i class="sbtn__arrow">→</i>
+      </a>
+      <a class="sbtn sbtn--yt" href="https://www.youtube.com/@HybridV16" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.4-1C16.9 3.5 12 3.5 12 3.5s-4.9 0-8.2.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.4-.9 2.4S.3 9.2.3 11.2v1.6c0 2 .2 4 .2 4s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 7.9.3 7.9.3s4.9 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.4.9-2.4s.2-2 .2-4v-1.6c0-2-.2-4-.2-4zM9.7 15.4V8.2l6.4 3.6-6.4 3.6z"/></svg>
+        <span class="sbtn__txt"><b>YOUTUBE</b><small>@HybridV16 · YouTube 频道</small></span>
+        <i class="sbtn__arrow">→</i>
+      </a>
+    </div>
+  </div>
+  <div class="footer__top">
+    <p class="footer__brand mono">BUGATTI · CHIRON SUPER SPORT</p>
+    <p class="footer__links mono">
+      <a href="index.html">中文</a><a href="en.html">English</a>
+    </p>
+  </div>
+  <div class="footer__disclaimer">
+    <p>This is a fan-made introduction site. Content, images and videos are sourced from official Bugatti press releases and the official website, for learning and presentation purposes. Bugatti, Chiron Super Sport and related trademarks, images © Bugatti Automobiles S.A.S. Performance data per official release.</p>
+    <p class="mono">IMAGES:<a href="https://newsroom.bugatti.com" target="_blank" rel="noopener">BUGATTI NEWSROOM</a> · <a href="https://www.bugatti.com/en/models/chiron-super-sport" target="_blank" rel="noopener">BUGATTI.COM</a> — MOLSHEIM · 1903 → 2024</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
