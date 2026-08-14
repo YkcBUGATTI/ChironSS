@@ -120,6 +120,18 @@
         }, { rootMargin: '800px 0px' });
         io.observe(track);
       }
+      // 兜底预加载:页面加载完成后 2.5s 即开始缓冲,避免首次滚动时网络首包延迟
+      if (video && !inst.loaded) {
+        var preTimer = setTimeout(function () {
+          if (!inst.loaded) {
+            inst.loaded = true;
+            video.preload = 'auto';
+            video.load();
+          }
+        }, 2500);
+        if (inst.preTimer) clearTimeout(inst.preTimer);
+        inst.preTimer = preTimer;
+      }
       if (video) {
         video.addEventListener('loadedmetadata', function () {
           video.pause();
@@ -158,7 +170,10 @@
           var t = p * inst.dur;
           inst.track.__cssDebugP = p;
           inst.track.__cssDebugT = t;
-          if (Math.abs(t - inst.video.currentTime) > 0.08) inst.video.currentTime = t;
+          if (Math.abs(t - inst.video.currentTime) > 0.08) {
+            if (inst.video.fastSeek) inst.video.fastSeek(t);
+            else inst.video.currentTime = t;
+          }
           var seg = t >= inst.dur * 2 / 3 ? 2 : (t >= inst.dur / 3 ? 1 : 0);
           if (seg !== inst.lastSec) {
             inst.lastSec = seg;
