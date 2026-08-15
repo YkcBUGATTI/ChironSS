@@ -65,6 +65,10 @@
   onReady(function () {
     var hero = doc.querySelector('.hero');
     if (!hero) return;
+    if (IS_MOBILE) {
+      var hv = hero.querySelector('video');
+      if (hv) { hv.pause(); hv.removeAttribute('autoplay'); hv.preload = 'none'; }
+    }
     setTimeout(function () { hero.classList.add('is-in'); }, 60);
     var px = hero.querySelector('.hero__parallax');
     var hs = doc.querySelector('.hero__scroll');
@@ -111,7 +115,7 @@
         dur: dur, videoReady: false, lastSec: -1, loaded: false, idx: -1,
         curP: 0, vel: 0
       };
-      if (video && 'IntersectionObserver' in window) {
+      if (video && !IS_MOBILE && 'IntersectionObserver' in window) {
         var io = new IntersectionObserver(function (entries) {
           if (entries.some(function (e) { return e.isIntersecting; }) && !inst.loaded) {
             inst.loaded = true;
@@ -121,7 +125,7 @@
         io.observe(track);
       }
       // 兜底预加载:页面加载完成后 2.5s 即开始缓冲,避免首次滚动时网络首包延迟
-      if (video && !inst.loaded) {
+      if (video && !IS_MOBILE && !inst.loaded) {
         var preTimer = setTimeout(function () {
           if (!inst.loaded) {
             inst.loaded = true;

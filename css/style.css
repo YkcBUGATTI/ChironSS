@@ -674,7 +674,8 @@ button { font-family: inherit; cursor: pointer; }
   .scrub__texts { bottom: 6rem; }
   .scrub__meter { display: none; }
   .scrub__text { position: static; opacity: 0; pointer-events: none; }
-  .scrub__texts { position: relative; height: 0; }
+  .scrub__texts { position: relative; height: 0; left: 0; width: 100%; }
+  .scrub__text { width: 92vw; margin: 0 auto; }
   .scrub__text.is-on { pointer-events: none; }
   .scrub-mobile-holder { position: relative; }
 }
