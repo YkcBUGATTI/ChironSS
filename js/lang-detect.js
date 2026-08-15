@@ -14,6 +14,15 @@
   var saved = null;
   try { saved = localStorage.getItem('chiron-lang'); } catch (e) {}
 
+  // 语言按钮点击:记录用户显式选择(必须在提前 return 之前注册,
+  // 否则已选择当前语言的用户点「切换」时不会记录新选择,会被 IP 检测弹回)
+  document.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('a.lang-btn');
+    if (!a) return;
+    var lang = /en\.html/.test(a.getAttribute('href')) ? 'en' : 'zh';
+    try { localStorage.setItem('chiron-lang', lang); } catch (e) {}
+  });
+
   // 用户显式选择过当前语言:不自动跳转
   if (saved === (onEn ? 'en' : 'zh')) return;
 
@@ -28,14 +37,6 @@
     if (!isCN && !onEn)      switchTo('en.html', 'en');   // 海外 → 英文版
     else if (isCN && onEn)   switchTo('index.html', 'zh'); // 国内 → 中文版
   }
-
-  // 语言按钮点击:记录用户显式选择
-  document.addEventListener('click', function (ev) {
-    var a = ev.target.closest && ev.target.closest('a.lang-btn');
-    if (!a) return;
-    var lang = /en\.html/.test(a.getAttribute('href')) ? 'en' : 'zh';
-    try { localStorage.setItem('chiron-lang', lang); } catch (e) {}
-  });
 
   // API 依次尝试:ipapi.co 主,ipinfo.io 兜底
   var tries = [

@@ -119,6 +119,7 @@
         var io = new IntersectionObserver(function (entries) {
           if (entries.some(function (e) { return e.isIntersecting; }) && !inst.loaded) {
             inst.loaded = true;
+            video.preload = 'auto';
             video.load();
           }
         }, { rootMargin: '800px 0px' });
@@ -174,7 +175,7 @@
           var t = p * inst.dur;
           inst.track.__cssDebugP = p;
           inst.track.__cssDebugT = t;
-          if (Math.abs(t - inst.video.currentTime) > 0.08) {
+          if (inst.video.readyState >= 2 && Math.abs(t - inst.video.currentTime) > 0.15) {
             if (inst.video.fastSeek) inst.video.fastSeek(t);
             else inst.video.currentTime = t;
           }
