@@ -810,7 +810,7 @@ button { font-family: inherit; cursor: pointer; }
   .gallery__media { position: relative; inset: auto; }
   .g-sticky { position: relative; top: auto; height: 56vw; }
   .g-image { position: absolute; inset: 0; clip-path: inset(0% 0% 0%); opacity: 0; transition: opacity .6s; }
-  .g-image:first-child { opacity: 1; }
+  .g-image:first-of-type { opacity: 1; }
   .g-image.is-on { opacity: 1; }
   .g-text { min-height: auto; padding: clamp(2rem, 6vw, 3rem) clamp(1.25rem, 5vw, 2.5rem); }
   .g-count { display: none; }

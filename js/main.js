@@ -43,7 +43,10 @@
     geo.gals = Array.prototype.map.call(doc.querySelectorAll('.gallery'), function (g) {
       return {
         top: g.getBoundingClientRect().top + window.scrollY,
-        h: g.offsetHeight
+        h: g.offsetHeight,
+        textTops: Array.prototype.map.call(g.querySelectorAll('.g-text'), function (t) {
+          return t.getBoundingClientRect().top + window.scrollY;
+        })
       };
     });
     var breaks = Array.prototype.slice.call(doc.querySelectorAll('[data-chapter]'));
@@ -259,6 +262,37 @@
         var g = geo.gals[n];
         if (!g) return;
         var top = g.top;
+
+        // 移动端:遮盖滚动退化为段落交替 + 图片 opacity 切换
+        if (IS_MOBILE) {
+          var tops = g.textTops || [];
+          var imgIdx = 0;
+          var segH = S;
+          inst.texts.forEach(function (t, i) {
+            var tTop = tops[i] !== undefined ? tops[i] : top + i * S;
+            var tNext = tops[i + 1] !== undefined ? tops[i + 1] : tTop + S;
+            var seg = Math.max(tNext - tTop, 1);
+            // 段落中心进入视口中部 → 亮起;滚过视口中部 → 淡出
+            var p = (sy + vh * 0.5 - tTop) / seg;
+            t.classList.toggle('is-on', p > 0 && p < 1);
+            var card = t.querySelector('.g-text__card');
+            if (card) card.classList.toggle('is-out', p >= 1);
+            if (tTop < sy + vh * 0.5) imgIdx = i;
+          });
+          inst.images.forEach(function (im, i) {
+            im.classList.toggle('is-on', i === imgIdx);
+            if (im.style.clipPath) im.style.clipPath = '';
+          });
+          if (inst.countEl) {
+            var cn2 = imgIdx + 1;
+            if (cn2 !== inst.lastCount) {
+              inst.lastCount = cn2;
+              inst.countEl.textContent = (cn2 < 10 ? '0' + cn2 : cn2) + ' / ' + (inst.images.length < 10 ? '0' + inst.images.length : inst.images.length);
+            }
+          }
+          return;
+        }
+
         var done = 0;
         inst.texts.forEach(function (t, i) {
           var tTop = top + i * S;
